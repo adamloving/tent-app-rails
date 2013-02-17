@@ -1,0 +1,16 @@
+.row
+  .span2 
+    - if user_signed_in?   
+      h1 Welcome #{current_user.name}
+
+      h2 Post your status
+      form 
+        textarea
+          ' I'm using http://www.github.com/adamloving/tent-app-rails by ^adamloving.tent.is!
+        
+        btn.btn-primary Post
+
+    - else
+    
+      h1 Hi
+      p Please sign in using Tent.
