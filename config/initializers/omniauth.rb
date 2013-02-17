@@ -1,5 +1,5 @@
 Rails.application.config.middleware.use OmniAuth::Builder do
-  name = 'Vanila App'
+  name = 'Vanila Tent Rails App'
   name += ' ' + Rails.env unless Rails.env == 'production'
 
   provider :tent,
