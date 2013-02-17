@@ -14,6 +14,10 @@ ROOT_URL=http://localhost:3001
 
 (use heroku config:add to add these to your heroku app)
 
+Also
+
+heroku rake db:migrate
+
 ## Add-ons
 
 heroku addons:add scheduler:standard
