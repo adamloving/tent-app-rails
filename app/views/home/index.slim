@@ -1,12 +1,13 @@
 .row
   .span12 
     - if user_signed_in?   
-      h1 Welcome #{current_user.name}
+      h1 Welcome 
+      p Thanks for stopping by #{current_user.first_name}.
 
       - if flash[:notice]
         .alert.alert-success #{flash[:notice]}
 
-      h2 Post your status
+      h4 Post your status
       form method="post"
         input type="hidden" name="authenticity_token"
         textarea.span8 name="text"

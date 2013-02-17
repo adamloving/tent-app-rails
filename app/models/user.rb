@@ -91,8 +91,10 @@ class User < ActiveRecord::Base
   end
 
   def first_name
-    name = self.basic_profile['name']
-    name.split(' ').first if name
+    self.name.split(' ').first if self.name
   end
 
+  def name 
+    self.basic_profile['name']
+  end
 end
